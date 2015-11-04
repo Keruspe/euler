@@ -13,7 +13,7 @@ main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 
         cur += prev;
         prev = cur - prev;
-    }   
+    }
 
     printf ("Result: %lu\n", result);
 

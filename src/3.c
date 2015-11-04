@@ -19,7 +19,7 @@ int
 main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 {
     unsigned long result = 0;
-    unsigned int *primes = alloca (2048 * sizeof (unsigned int)); 
+    unsigned int *primes = alloca (2048 * sizeof (unsigned int));
     unsigned long number = 600851475143;
     unsigned int index = 0;
 
