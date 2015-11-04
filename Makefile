@@ -12,4 +12,4 @@ clean:
 	$(Q) rm -f $(ALL)
 
 %: src/%.c
-	$(Q) gcc -Wall -Wextra -pedantic -std=c11 $< -o $@
+	$(Q) gcc -Ofast -Wl,-Ofast -Wall -Wextra -pedantic -std=c11 $< -o $@
