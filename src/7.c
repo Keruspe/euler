@@ -1,19 +1,8 @@
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-bool
-is_prime (unsigned long number, unsigned long *primes)
-{
-    for (unsigned long *i = primes; *i; ++i)
-    {
-        if (!(number % *i))
-            return false;
-    }
-
-    return true;
-}
+#include "util/prime.c"
 
 int
 main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))

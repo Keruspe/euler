@@ -1,4 +1,4 @@
-ALL = $(filter-out skel,$(basename $(notdir $(shell ls src/*))))
+ALL = $(basename $(notdir $(shell ls src/*.c)))
 
 all: $(ALL)
 

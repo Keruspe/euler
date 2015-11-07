@@ -1,29 +1,18 @@
 #include <alloca.h>
-#include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
 
-bool
-is_prime (unsigned int number, unsigned int *primes)
-{
-    for (unsigned int *i = primes; *i; ++i)
-    {
-        if (!(number % *i))
-            return false;
-    }
-
-    return true;
-}
+#include "util/prime.c"
 
 int
 main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 {
     unsigned long result = 0;
-    unsigned int *primes = alloca (2048 * sizeof (unsigned int));
+    unsigned long *primes = alloca (2048 * sizeof (unsigned long));
     unsigned long number = 600851475143;
     unsigned int index = 0;
 
-    memset (primes, 0, 2048 * sizeof (unsigned int));
+    memset (primes, 0, 2048 * sizeof (unsigned long));
 
     while (number != 1)
     {
