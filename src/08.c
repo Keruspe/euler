@@ -8,7 +8,7 @@ main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
     unsigned int index = 0;
     char numbers[13];
     char c;
-    FILE *f = fopen ("data/8", "r");
+    FILE *f = fopen ("data/08", "r");
 
     while ((c = fgetc (f)) != EOF)
     {
