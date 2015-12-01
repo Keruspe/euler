@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-    int
+int
 main (int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 {
     unsigned int numbers[100][50] = { { 0 } };
